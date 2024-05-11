@@ -1,18 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Sorts+Mill+Goudy:ital@0;1&display=swap');
+@font-face { font-family: "Bright Sunshine"; src: url('../fonts/Bright\ Sunshine\ Demo.ttf'); } 
+
+
+
+
+
+body {
+  background-image: url("../img/background-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  font-family: "Sorts Mill Goudy", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #013220;
+}
+
+
+
+
+/*Header*/
+h1 {
+  font-family: "Bright Sunshine";
+  font-size: 50px;
+}
+
+header p {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+
+}
+
+header img {
+  width: 10%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+
 h1, h2 {
     text-align: center;
 }
 
 
+
 ul {
+    width: 80%;
     list-style-type: none;
-    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    position: center;
   }
   
   li {
     float: left;
+    width: 25%;
+
   }
   
   li a {
@@ -27,6 +77,26 @@ ul {
   li a:hover {
     background-color: #111;
   }
+
+  
+/*Home*/
+
+#home-page img {
+  width: 40%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#countdown {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+
+
+}
+
 
 /*RSVP form*/
 
@@ -49,3 +119,4 @@ label {
     display: block;
     margin: 0.5rem 0;
 }
+
