@@ -4,18 +4,42 @@ document.querySelector("header").innerHTML =
 
 
 
-<div class="wedding-date-header">
+<div id="april">
 <p>April</p>
-<p>Friday 25 2025</p>
+</div>
+
+<div id="wedding-day">
+
+<p id="day-of-week">Friday</p>
+<p id="day-of-month">25</p>
+<p id="year">2025</p>
+
+
+</div>
+
 </div>`
 
 
 
-document.getElementById("navbar").innerHTML = 
+document.getElementById("myTopnav").innerHTML = 
 
-`<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="rsvp.html">RSVP</a></li>
-<li><a>Schedule</a></li>
-<li><a>Q & A</a></li>
-</ul>`
+`
+<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+  <i class="fa fa-bars"></i>
+</a>
+<a href="index.html" class="active">Home</a>
+<a href="rsvp.html">RSVP</a>
+<a href="schedule.html">Schedule</a>
+<a href="q-and-a.html">Q & A</a>
+<a href="amy-and-neil.html">Amy & Neil</a>
+`
+
+
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
