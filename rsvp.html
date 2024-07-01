@@ -10,7 +10,6 @@
 <!-- Custom CSS -->
 <link href="assets/css/styles.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="assets/js/countdown.js"></script>
 
 </head>
 
@@ -24,70 +23,14 @@
     
 
 <main>
-<h2>RSVP</h2>
 
-
-<form action="mailto:emailid@example.com" method="post" enctype="text/plain">
-
-  <fieldset id="guest-type">
-  <legend id="your-details">Guest Type</legend>
-
-  <div class = "radio-buttons-container">
-
-  <label for="day" class="inline">
-    <input id="day" type="radio" name="guest_type" class="inline"/> 
-   Day guest</label>
-
-
-
-   <label for="evening-only" class="inline"> 
-    <input id="evening-only" type="radio" name="guest_type" class="inline"/> 
-
-    Evening guest
- </label>
-
-  </div>
-
- 
-   </fieldset>
+<div id="google-forms-top-hidden"></div>
   
-  <fieldset>
-    <legend id="your-details">Your Details</legend>
-
-    <div class="name">
-    <label for="fname">First Name</label><br>
-    <input type="text" id="fname" name="fname"><br>
-    </div>
-
-    <div class="name">
-    <label for="lname">Surname</label><br>
-    <input type="text" id="lname" name="lname">
-    </div>
+<div id = "google-form">
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSegmkL8ugu5Qn8gVe2KVFOI3tEbGMyiW3WspxEIi_yWQw0gMw/viewform?embedded=true" width="640" height="1116" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</div>
 
 
-  </fieldset>
-
-  <fieldset>
-    <legend>Food</legend>
-    
-
-    <label for="menu">Select a menu</label>
-    <select name="menu" id="menu">
-      <option value="menu1">Menu 1</option>
-      <option value="menu2">Menu 2</option>
-      <option value="menu3">Menu 3</option>
-      <option value="menu4">Menu 4</option>
-    </select><br>
-
-
-    <label for="allergies">Let us know any allergies here:</label><br>
-    <input type="text" id="allergies" name="allergies">
-</fieldset>
-
-   
-
-    <input type="submit" value="Send">
-</form>
 
 </main>
 

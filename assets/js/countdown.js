@@ -20,6 +20,9 @@ var x = setInterval(function() {
   document.getElementById("countdown").innerHTML = days + " days " + hours + " hours "
   + minutes + " minutes " + seconds + " seconds ";
 
+  document.getElementById("countdown-placeholder").style.display = "none";
+  document.getElementById("countdown").style.display = "block";  
+
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
