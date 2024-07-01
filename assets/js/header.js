@@ -27,7 +27,7 @@ document.getElementById("myTopnav").innerHTML =
 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
   <i class="fa fa-bars"></i>
 </a>
-<a href="index.html" class="active">Home</a>
+<a href= "index.html" class="active">Home</a>
 <a href="rsvp.html">RSVP</a>
 <a href="schedule.html">Schedule</a>
 <a href="q-and-a.html">Q & A</a>
