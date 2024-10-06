@@ -1,209 +1,136 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Belleza&family=Sorts+Mill+Goudy:ital@0;1&display=swap');
 @font-face { font-family: "Bright Sunshine"; src: url('../fonts/Bright\ Sunshine\ Demo.ttf'); } 
 
 
-* {
-  box-sizing: border-box;
-}
-
-
 body {
-  background-image: url("../img/background-image.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-
-  font-family: "Sorts Mill Goudy", serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #586136;
-
-
-  margin: 0;
-
- 
-}
+    background-image: url("../img/background-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  
+    font-family: "Sorts Mill Goudy", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #586136;
 
 
+   
+  }
+  
 
-/*Header*/
-header {
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  footer {
+    margin-top: auto;
+  } 
 
-  min-height: 50px;
-
-}
+  nav {
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
 
 h1 {
   font-family: "Bright Sunshine";
   font-size: 50px;
-  margin-bottom: 0px;
-}
-
-header p {
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-
-}
-
-header img {
-  width: 10%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
 }
 
 
-h1, h2 {
-    text-align: center;
-}
 
-#april {
-  margin-bottom: -50px;
-}
-
-#wedding-day {
-  width: 50%;
-  position: center;
-  margin-left: auto;
-  margin-right: auto;
-  white-space: nowrap;
-}
-  
-
-
-#wedding-day p {
-  width: 33%;
-  display: inline-block;
-}
-
-#day-of-week {
-  text-align: right;
-  font-size: 16px;
-}
-
-
-#day-of-month {
-  text-align:  center;
-  font-size: 30px; 
-}
-
-
-#year {
-  text-align: left;
-  font-size: 20px;
-
-}
-
-/*Nav*/
-
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-  width: 80%;
-  margin-left: auto;
+.wedding-date {
+    text-transform: uppercase;
+    width: 50%;
+    position: center;
+    margin-left: auto;
     margin-right: auto;
+    white-space: nowrap;
+    letter-spacing: 3px;
 }
 
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  width: 20%;
-}
-
-.topnav a:hover {
-  background-color: #111;
-}
-
-
-
-.topnav .icon {
-  display: none;
-}
-
-@media screen and (max-width: 600px) {
-
-  .topnav {
-    width: 100%;
+.wedding-date span {
+    width: 33%;
+    display: inline-block;
   }
-
-  .topnav a {
-    width: 100%;
-  }
-
-  .topnav a {display: none;}
-  .topnav a.icon {
-    float: top;
-    display: block;
-  }
-
-
   
-}
+  #day-of-week {
+    text-align: right;
+    font-size: 16px;
+  }
+  
+  
+  #day-of-month {
+    text-align:  center;
+    font-size: 30px; 
+  }
+  
 
-@media screen and (max-width: 600px) {
-
-  .topnav.responsive a {
-    float: none;
-    display: block;
+  #year {
     text-align: left;
-  }
-}
-
+    font-size: 20px;
   
-/*Home*/
-
-.home-img img {
-  width: 40%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-
-
-@media screen and (max-width: 600px) {
-
-  .home-img img {
-    width: 80%;
   }
 
-  
+.navbar-toggler {
+  color: white;
+}
+
+.navbar-nav {
+    width: 100%;
+}
+
+.nav-item {
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+.nav-item > a {
+   color: white;
+   text-align: center;
+ } 
+
+
+ a:active { 
+   color: grey; 
 }
 
 
 
-#countdown {
-  text-align: center;
-  font-size: 20px;
-  font-weight: 600;
 
+ .nav-item:hover {
+  background-color: #586136;
+ }
+ 
+
+ #header-img {
+  transform: rotate(180deg);
+  opacity: 0.5;
+}
+
+
+@media (min-width: 992px) {
+
+  #header-text {
+    position: relative;
+    top: -40px;
+    margin-bottom: -40px;
+  }
 
 }
 
 
-/*RSVP form*/
+@media (min-width: 1200px) {
 
-#google-forms-top-hidden {
-  z-index: 1;
-  opacity: 0;
-  height: 20%;
-  width: 50%;
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
+  #header-text {
+    position: relative;
+    top: -65px;
+    margin-bottom: -65px;
+  }
+
 }
-
-#google-form {
-  margin-top: 2%;
-  display: flex; 
-  justify-content: center;
-  position: relative;
-}
-
