@@ -16,37 +16,43 @@
   <link href="assets/css/styles.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
+    td:nth-child(1) {
+      width: 20%;
+    }
 
+    td:nth-child(2) {
+      width: 20%;
+    }
   </style>
 </head>
 
 <body>
 
-    <header class="row">
+  <header class="row">
 
 
-        <div class="col-sm">
+    <div class="col-sm">
+    </div>
+
+    <div class="header-main col-sm-8">
+
+      <img src="assets/img/footer.jpg" class="img-fluid mx-auto d-block" id="header-img" />
+
+
+      <div id="header-text" class="text-center">
+        <h1>Amy & Neil</h1>
+
+        <span class="wedding-date">April</span>
+        <div class="wedding-date">
+          <span id="day-of-week">Friday</span><span id="day-of-month">25</span><span id="year">2025</span>
         </div>
-    
-        <div class="header-main col-sm-8">
-    
-          <img src="assets/img/footer.jpg" class="img-fluid mx-auto d-block" id="header-img" />
-    
-    
-          <div id="header-text" class="text-center">
-            <h1>Amy & Neil</h1>
-    
-            <span class="wedding-date">April</span>
-            <div class="wedding-date">
-              <span id="day-of-week">Friday</span><span id="day-of-month">25</span><span id="year">2025</span>
-            </div>
-          </div>
-        </div>
-    
-        <div class="col-sm">
-        </div>
-    
-      </header>
+      </div>
+    </div>
+
+    <div class="col-sm">
+    </div>
+
+  </header>
 
 
   <div class="row">
@@ -67,7 +73,13 @@
             <a class="nav-link" href="rsvp.html">RSVP</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="venue.html">Venue</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="schedule.html">Schedule</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="accomodation.html">Accommodation</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="q-and-a.html">Q&A</a>
@@ -83,13 +95,144 @@
   </div>
 
   <br>
-  <h3 class="text-center", style="font-weight: bold;">
+  <h2 class="text-center" , style="font-weight: bold;">
     Schedule
+  </h2>
+  <br>
+
+  <h3 class="text-center">
+    Day Guests
   </h3>
 
   <div class="container">
-    <div class="text-center">
-        Come back for more schedule information later ... you don't want to walk in right after the 'Does anyone object?'
+
+
+
+
+    <div class="col-md">
+
+    </div>
+
+    <div class="col-md-9 mx-auto d-block">
+      <table class="text-center">
+        <tr>
+          <th>Time</th>
+          <th>Event</th>
+          <th>Details</th>
+        </tr>
+        <tr>
+          <td>13:00</td>
+          <td>Guest Arrival</td>
+          <td>
+            <ul>
+              <li>
+                Doors open at 13:00
+              </li>
+              <li>
+                Please arrive no later than 13:30
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>14:00</td>
+          <td>Ceremony</td>
+          <td>
+            <ul>
+              <li>
+                The Ceremony will begin promptly at 14:00
+              </li>
+              <li>
+                Please be seated by 13:50 to ensure an on-time start
+              </li>
+              <li>
+                We can't wait to share this special moment with you
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>15:00</td>
+          <td>Post-Ceremony Celebration</td>
+          <td>
+            <ul style="list-style-position: inside">
+              <li>
+                Join us for drinks and canapes
+              </li>
+              <li>
+                Photos will be taken during this time
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>17:00</td>
+          <td>Wedding Breakfast</td>
+          <td>
+            <ul>
+              <li>
+                A celebratory meal will be served at 17:00
+              </li>
+              <li>
+                Speeches and toasts will take place during the meal
+              </li>
+              <li>
+                Special dietary options will be available
+              </li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <h3 class="text-center">
+      Evening Guests
+    </h3>
+    <div class="col-md-9 mx-auto d-block">
+      <table class="text-center">
+        <tr>
+          <th>Time</th>
+          <th>Event</th>
+          <th>Details</th>
+        </tr>
+        <tr>
+          <td>19:00</td>
+          <td>Evening Guests Arrival</td>
+          <td>
+            <ul>
+              <li>
+                Evening guests are welcome to join the festivities from 19:00
+              </li>
+              <li>
+                The dance floor opens - get ready to dance the night away!
+              </li>
+              <li>
+                Our DJ will start the entertainment
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>00:00</td>
+          <td>Carriages
+          <td>
+            <ul>
+              <li>
+                The celebration concludes at midnight
+              </li>
+              <li>
+                Please check the "Travel & Accommation" section for further infomation
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+      </table>
+    </div>
+
+
+    <div class="col-md">
+
     </div>
   </div>
 
@@ -103,7 +246,7 @@
     <div class="col-sm">
     </div>
 
-</footer>
+  </footer>
 
 
 
