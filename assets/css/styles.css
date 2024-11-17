@@ -26,8 +26,10 @@ body {
   }
   
   footer {
-    margin-top: auto;
-  } 
+    margin-top: 40px;
+    opacity: 0.5;
+  }
+  
 
   nav {
     margin-top: 10px;
@@ -154,3 +156,5 @@ table {
 li {
   list-style-position: inside;
 }
+
+
