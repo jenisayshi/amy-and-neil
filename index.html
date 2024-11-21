@@ -29,35 +29,7 @@
     }
 
 
-    #countdown-text {
-      background-color: blue;
-      display: block;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 30px;
-      color: white;
-      transition: .5s ease;
-      display: none;
-    }
-
-    #countdown-img>img:hover #countdown-text {
-      display: block !important;
-    }
-
-
-    #countdown-img>img:hover+#countdown-text {
-      display: block;
-    }
-
-
-
-    #header-img {
-      transform: rotate(180deg);
-      opacity: 0.5;
-    }
-
+ 
 
 
 
@@ -139,10 +111,12 @@
 
       <div class="col-md">
       </div>
-      <div class="col-md-8 text-center" id="countdown-img">
-        <img src="assets/img/home-img.jpg" class="mx-auto d-block img-fluid rounded-circle" />
-        <span id="countdown-text"></span>
+      <div class="col-md-8 text-center">
+        <img id="countdown-img" src="assets/img/home-img.jpg" class="mx-auto d-block img-fluid rounded-circle" />
+        <br>
+        <h2 id="countdown-text"></h2>
       </div>
+ 
 
       <div class="col-md">
       </div>
