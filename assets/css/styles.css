@@ -28,6 +28,7 @@ body {
   footer {
     margin-top: auto;
     opacity: 0.5;
+    min-height: 100%;
   }
   
 
