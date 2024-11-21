@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Belleza&family=Sorts+Mill+Goudy:ital@0;1&display=swap');
 @font-face { font-family: "Bright Sunshine"; src: url('../fonts/Bright\ Sunshine\ Demo.ttf'); } 
 
+* {
+  padding: 0;
+margin: 0;
+}
 
 body {
     background-image: url("../img/background-image.jpg");
@@ -28,7 +32,6 @@ body {
   footer {
     margin-top: auto;
     opacity: 0.5;
-    min-height: 100%;
   }
   
 
