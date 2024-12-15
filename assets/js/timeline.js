@@ -1,30 +1,3 @@
-//document.getElementsByClassName("timeline-year")[0].classList.add("text-center")
-
-function addTimelineImg(year, 
-    month,
-    text,
-    img_src
-) {
-    return `<h3 class = "timeline-year">$year</h3>
-    <h5 class = "timeline-month">$month</h5>
-    <div class="row">
-        <div class="col-md timeline-col-1">
-        </div>
-        <div class="col-md-5 timeline-col-2 timeline-text">
-          $text
-        </div>
-        <div class="col-md-5 timeline-col-3 timeline-img-container">
-            <img src=$img_src class="mx-auto d-block img-fluid rounded">
-        </div>
-        <div class="col-md timeline-col-4">
-        </div>
-    </div>`
-  }
-
-
-
-
-
 
 var timeline_container = document.getElementById("timeline-container")
 
@@ -73,7 +46,7 @@ for (let i = 0; i < timeline_img_containers.length; i++) {
 var timeline_col_1 = document.getElementsByClassName("timeline-col-1")
 for (let i = 0; i < timeline_col_1.length; i++) {
     if(isEven(i)){
-        timeline_col_1[i].classList.add("order-md-1")
+        timeline_col_1[i].classList.add("order-md-2")
     }
        
 }
@@ -81,22 +54,8 @@ for (let i = 0; i < timeline_col_1.length; i++) {
 var timeline_col_2 = document.getElementsByClassName("timeline-col-2")
 for (let i = 0; i < timeline_col_2.length; i++) {
     if(isEven(i)){
-        timeline_col_2[i].classList.add("order-md-3")
-    }
-       
-}
-var timeline_col_3 = document.getElementsByClassName("timeline-col-3")
-for (let i = 0; i < timeline_col_3.length; i++) {
-    if(isEven(i)){
-        timeline_col_3[i].classList.add("order-md-2")
+        timeline_col_2[i].classList.add("order-md-1")
     }
        
 }
 
-var timeline_col_4 = document.getElementsByClassName("timeline-col-4")
-for (let i = 0; i < timeline_col_4.length; i++) {
-    if(isEven(i)){
-        timeline_col_4[i].classList.add("order-md-4")
-    }
-       
-}
