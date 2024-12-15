@@ -25,6 +25,7 @@
 
     #countdown-img {
       position: relative;
+      border-radius: 50%;
     }
 
 
@@ -46,9 +47,8 @@
 
 
     #countdown-img>img:hover+#countdown-text {
-      display: block;
+      display: block !important;
     }
-
 
 
     #header-img {
@@ -56,6 +56,21 @@
       opacity: 0.5;
     }
 
+    @media (min-width: 767px) {
+
+      #home-img-mobile {
+        display: none !important;
+      }
+
+    }
+
+    @media (max-width: 767px) {
+
+      #home-img {
+        display: none !important;
+      }
+
+    }
 
     @media (min-width: 992px) {
 
@@ -98,7 +113,7 @@
 
         <span class="wedding-date">April</span>
         <div class="wedding-date">
-          <span id="day-of-week">Friday        </span><span id="day-of-month">25</span><span id="year">2025</span>
+          <span id="day-of-week">Friday</span><span id="day-of-month">25</span><span id="year">2025</span>
         </div>
       </div>
     </div>
@@ -154,14 +169,17 @@
   <div class="container">
     <div class="row">
 
-      <div class="col-md">
+      <div class="col-lg">
       </div>
-      <div class="col-md-8 text-center" id="countdown-img">
-        <img src="assets/img/home-img.jpg" class="mx-auto d-block img-fluid rounded-circle" />
+      <div class="col-lg-8 text-center" id="countdown-img">
+        <img src="assets/img/home-img.jpg" id="home-img" class="mx-auto d-block img-fluid"
+          style="border-radius: 50%;" />
+        <img src="assets/img/home-img-mobile.jpg" id="home-img-mobile" class="mx-auto d-block img-fluid"
+          style="border-radius: 50%;" />
         <span id="countdown-text"></span>
       </div>
 
-      <div class="col-md">
+      <div class="col-lg">
       </div>
 
 
