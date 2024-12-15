@@ -18,19 +18,8 @@
 
   <script src="assets/js/countdown.js"></script>
   <style>
-    #countdown-img>img:hover {
-      filter: contrast(50%);
-    }
 
-
-    #countdown-img {
-      position: relative;
-      border-radius: 50%;
-    }
-
-
-    #countdown-text {
-      display: block;
+#countdown-text {
       position: absolute;
       top: 50%;
       left: 50%;
@@ -41,25 +30,29 @@
       display: none;
     }
 
+    #countdown-img>img:hover {
+      filter: contrast(50%);
+    }
+
     #countdown-img>img:hover #countdown-text {
       display: block !important;
     }
 
 
-    #countdown-img>img:hover+#countdown-text {
+    #countdown-img>img:hover ~ #countdown-text {
       display: block !important;
     }
 
-
-    #header-img {
-      transform: rotate(180deg);
-      opacity: 0.5;
+    #countdown-img {
+      position: relative;
     }
 
 
+ 
+
     @media (max-width: 992px) {
 
-      #home-img {
+      #home-img-desktop {
         display: none !important;
       }
 
@@ -72,13 +65,14 @@
       }
 
     }
+
     @media (max-width: 768px) {
 
-#home-img-tablet {
-  display: none !important;
-}
+      #home-img-tablet {
+        display: none !important;
+      }
 
-}
+    }
 
 
 
@@ -91,26 +85,9 @@
     }
 
 
-    @media (min-width: 992px) {
-
-      #header-text {
-        position: relative;
-        top: -40px;
-        margin-bottom: -40px;
-      }
-
-    }
 
 
-    @media (min-width: 1200px) {
-
-      #header-text {
-        position: relative;
-        top: -65px;
-        margin-bottom: -65px;
-      }
-
-    }
+    
   </style>
 </head>
 
@@ -191,13 +168,15 @@
       <div class="col-lg">
       </div>
       <div class="col-lg-8 text-center" id="countdown-img">
-        <img src="assets/img/home-img.jpg" id="home-img" class="mx-auto d-block img-fluid"
+        <img src="assets/img/home-img.jpg" id="home-img-desktop" class="mx-auto d-block img-fluid"
           style="border-radius: 50%;" />
+   
         <img src="assets/img/home-img-tablet.jpg" id="home-img-tablet" class="mx-auto d-block img-fluid"
           style="border-radius: 50%;" />
         <img src="assets/img/home-img-mobile.jpg" id="home-img-mobile" class="mx-auto d-block img-fluid"
           style="border-radius: 50%;" />
-        <span id="countdown-text"></span>
+          <span id="countdown-text"></span>
+      
       </div>
 
       <div class="col-lg">
