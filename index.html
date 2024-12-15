@@ -19,7 +19,8 @@
   <script src="assets/js/countdown.js"></script>
   <style>
 
-#countdown-text {
+   /*Format countdown text*/
+    #countdown-text {
       position: absolute;
       top: 50%;
       left: 50%;
@@ -30,28 +31,30 @@
       display: none;
     }
 
-    #countdown-img>img:hover {
-      filter: contrast(40%);
-    }
-
-    #countdown-img>img:hover #countdown-text {
-      display: block !important;
-    }
-
-
-    #countdown-img>img:hover ~ #countdown-text {
-      display: block !important;
-    }
-
     #countdown-img {
       position: relative;
     }
 
 
+    /*Change image contrast on hover to be able to see image text easier*/
+    #countdown-img>img:hover {
+      filter: contrast(40%);
+    }
+
+    /*Only show countdown text on image hover*/
+    #countdown-img>img:hover #countdown-text {
+      display: block !important;
+    }
+
+
+    #countdown-img>img:hover~#countdown-text {
+      display: block !important;
+    }
+
  
 
+    /*Only show desktop, tablet or mobile image depending on screen size*/
     @media (max-width: 992px) {
-
       #home-img-desktop {
         display: none !important;
       }
@@ -59,7 +62,6 @@
     }
 
     @media (min-width: 992px) {
-
       #home-img-tablet {
         display: none !important;
       }
@@ -67,42 +69,31 @@
     }
 
     @media (max-width: 768px) {
-
       #home-img-tablet {
         display: none !important;
       }
 
     }
 
-
-
     @media (min-width: 768px) {
-
       #home-img-mobile {
         display: none !important;
       }
 
     }
-
-
-
-
-    
   </style>
 </head>
 
 <body>
 
+   <!--Header-->
   <header class="row">
-
 
     <div class="col-sm">
     </div>
 
     <div class="header-main col-sm-8">
-
       <img src="assets/img/footer.jpg" class="img-fluid mx-auto d-block" id="header-img" />
-
 
       <div id="header-text" class="text-center">
         <h1>Amy & Neil</h1>
@@ -119,7 +110,7 @@
 
   </header>
 
-
+ <!--Nav-->
   <div class="row">
     <div class="col-lg">
     </div>
@@ -159,34 +150,32 @@
     </div>
   </div>
 
-
-  <br>
-
+  <!--Main content-->
   <div class="container">
+
     <div class="row">
 
       <div class="col-lg">
       </div>
+
       <div class="col-lg-8 text-center" id="countdown-img">
         <img src="assets/img/home-img.jpg" id="home-img-desktop" class="mx-auto d-block img-fluid"
           style="border-radius: 50%;" />
-   
         <img src="assets/img/home-img-tablet.jpg" id="home-img-tablet" class="mx-auto d-block img-fluid"
           style="border-radius: 50%;" />
         <img src="assets/img/home-img-mobile.jpg" id="home-img-mobile" class="mx-auto d-block img-fluid"
           style="border-radius: 50%;" />
-          <span id="countdown-text"></span>
-      
+        <span id="countdown-text"></span>
+
       </div>
 
       <div class="col-lg">
       </div>
 
-
     </div>
   </div>
 
-
+ <!--Footer-->
   <footer class="row">
 
     <div class="col-sm">

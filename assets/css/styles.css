@@ -1,138 +1,55 @@
-
+/*Import fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Belleza&family=Sorts+Mill+Goudy:ital@0;1&display=swap');
-@font-face { font-family: "Bright Sunshine"; src: url('../fonts/Bright\ Sunshine\ Demo.ttf'); } 
 
+@font-face {
+  font-family: "Bright Sunshine";
+  src: url('../fonts/Bright\ Sunshine\ Demo.ttf');
+}
+
+/*Set up page*/
 * {
   padding: 0;
-margin: 0;
+  margin: 0;
 }
 
 body {
-    background-image: url("../img/background-image.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-  
-    font-family: "Sorts Mill Goudy", serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #586136;
+  background-image: url("../img/background-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  font-family: "Sorts Mill Goudy", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #586136;
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+}
 
 
-   
-  }
-  
+/*Footer*/
+footer {
+  margin-top: auto;
+  opacity: 0.5;
+}
 
-  body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  footer {
-    margin-top: auto;
-    opacity: 0.5;
-  }
-  
 
-  nav {
-    margin-top: 10px;
-    margin-bottom: 40px;
-  }
 
+/*Header*/
 h1 {
   font-family: "Bright Sunshine";
   font-size: 50px;
 }
 
 
-
-.wedding-date {
-    text-transform: uppercase;
-    width: 50%;
-    position: center;
-    margin-left: auto;
-    margin-right: auto;
-    white-space: nowrap;
-    letter-spacing: 3px;
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media(max-width: 600px) {
-  .wedding-date {
-    width: 60%;
-}
-}
-
-@media(max-width: 400px) {
-  .wedding-date {
-    width: 70%;
-}
-
-
-} 
-
-.wedding-date span {
-    width: 33%;
-    display: inline-block;
-  }
-  
-  #day-of-week {
-    font-size: 16px;
-  }
-  
-  
-  #day-of-month {
-    font-size: 30px; 
-  }
-  
-
-  #year {
-    font-size: 23px;
-  
-  }
-
-.navbar-toggler {
-  color: white;
-}
-
-.navbar-nav {
-    width: 100%;
-}
-
-.nav-item {
-
-    width: 100%;
-    text-align: center; /* If you want the text to be centered */
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-.nav-item > a {
-   color: white;
-   text-align: center;
- } 
-
-
- a:active { 
-   color: grey; 
-}
-
-
-.nav-link {
-  width: 100%
-}
-
- .nav-link:hover {
-  background-color: #586136;
- }
- 
-
- #header-img {
+#header-img {
   transform: rotate(180deg);
   opacity: 0.5;
 }
+
 
 
 @media (min-width: 992px) {
@@ -156,7 +73,105 @@ h1 {
 
 }
 
+.wedding-date {
+  text-transform: uppercase;
+  width: 50%;
+  position: center;
+  margin-left: auto;
+  margin-right: auto;
+  white-space: nowrap;
+  letter-spacing: 3px;
+}
 
+@media(max-width: 600px) {
+  .wedding-date {
+    width: 60%;
+  }
+}
+
+@media(max-width: 400px) {
+  .wedding-date {
+    width: 70%;
+  }
+
+
+}
+
+.wedding-date span {
+  width: 33%;
+  display: inline-block;
+}
+
+#day-of-week {
+  font-size: 16px;
+}
+
+
+#day-of-month {
+  font-size: 30px;
+}
+
+
+#year {
+  font-size: 23px;
+
+}
+
+/*Nav*/
+nav {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.navbar-toggler {
+  color: white;
+}
+
+.navbar-nav {
+  width: 100%;
+}
+
+.nav-item {
+
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.nav-item > a {
+  color: white;
+  text-align: center;
+}
+
+
+a:active {
+  color: grey;
+}
+
+
+.nav-link {
+  width: 100%
+}
+
+.nav-link:hover {
+  background-color: #586136;
+}
+
+
+
+/*Text content*/
+li {
+  list-style-position: inside;
+}
+
+h3 {
+  margin-top: 30px;
+}
+
+
+/*Tables*/
 tr {
   border-bottom: 1px solid #ddd;
 }
@@ -165,13 +180,8 @@ table {
   width: 100%;
 }
 
-li {
-  list-style-position: inside;
+@media(max-width: 600px) {
+  table {
+    font-size: 15px;
+  }
 }
-
-
-
-h3{
-  margin-top: 30px;
-}
-
