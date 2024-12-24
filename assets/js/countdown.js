@@ -14,8 +14,19 @@ var x = setInterval(function() {
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 
+  if (days == 1) {
+    var daystext = " day"
+  } else {
+    var daystext = " days"
+  }
+  if (hours == 1) {
+    var hourstext = " hour"
+  } else {
+    var hourstext = " hours"
+  }
+
   // Display the result in the element with id="demo"
-  document.getElementById("countdown-text").innerHTML = days + " days<br> "  + hours + " hours "
+  document.getElementById("countdown-text").innerHTML = days + daystext + "<br> "  + hours + hourstext
   
 
   document.getElementById("countdown-placeholder").style.display = "none";
